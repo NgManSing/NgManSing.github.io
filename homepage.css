@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.table_style{
+    margin: 20px;
+}
+
+.parallax h1{
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.parallax {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    font-family: "Lato", sans-serif;
+}
+
+#my_pic {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    margin: auto;
+    padding: 30px 0;
+}
+
+#my_pic img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 6px rgba(0, 0, 0, 0.7);
+}
+
+ul {
+    position: absolute;
+    right: 0;
+    margin: auto auto;
+    display: inline-block;
+    min-width: 400px;
+}
+
+html {
+    font-family: "Roboto Mono";
+    font-size: 24px;
+    scroll-behavior: smooth;
+}
+
+section {
+    width: 100%;
+    min-height: 30vh;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+@keyframes fadein {
+    from { opacity: 0;}
+    to   { opacity: 1;}
+}
+
+#home {
+
+    background-image: url('https://wallpaperaccess.com/full/202976.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 50vh;
+}
+
+#background {
+    background-image: url('https://i.pinimg.com/736x/72/3c/c2/723cc26fa128164f9b351f218633e1d4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#background_content{
+    background-image: url('https://s3.envato.com/files/303105233/DSC_7437%20copy.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#ECA{
+    background-image: url('https://i0.wp.com/oyaschool.com/wp-content/uploads/2018/10/Extra-Curricular.jpg?fit=600%2C315&ssl=1');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#ECA_content{
+    background-image: url('https://lh3.googleusercontent.com/DzZie7IBii-SAvSIRbEuQA2Ag9NvMWBcttWyKRn5crnSef2XGR3GUff5jPAPlXf7UzytVKLDe5yXKWhIt5WC4G-G=w640-h400-e365-rj-sc0x00ffffff');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#awards{
+    background-image: url('https://scholarshipsessay.com/wp-content/uploads/2020/01/scholarship-concept-590165986-5b0db22d1d640400376afb04.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#awards_content{
+    background-image: url('https://lh3.googleusercontent.com/DzZie7IBii-SAvSIRbEuQA2Ag9NvMWBcttWyKRn5crnSef2XGR3GUff5jPAPlXf7UzytVKLDe5yXKWhIt5WC4G-G=w640-h400-e365-rj-sc0x00ffffff');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+}
+
+.card{
+    margin: 20px;
+    width: 400px;
+}
+
+.card_format{
+    display: flex;
+    justify-content: center;
+}
+
+#footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+}
+
+nav .navbar {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+nav .navbar ul li {
+    display: inline-block;
+}
+
+nav .navbar ul li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: black;
+}
+
+nav .navbar ul li.active {
+    background-color: #34568B;
+    transition: 0.3s ease background-color;
+}
+
+nav .navbar ul li.active a {
+    color: rgb(255, 255, 255);
+}
+
+#tag {
+    display: inline-block;
+    margin: auto 40px;
+}
+
+.navbar-brand {
+    color: rgb(199, 213, 218);
+    text-shadow: 1px 1px 2px black, 0 0 25px lightblue, 0 0 5px blue;
+}
+
+.row {
+    justify-content: center;
+}
+
+#intro {
+    margin: auto;
+    padding: 20px 0 0 0;
+    text-align: center;
+    font-family: Verdana;
+    animation: fadein 2s;
+}
+
+i{
+    font-size:30px;
+    padding-right: 2px;
+}
+
+.social_media a{
+    color: white;
+}
+
+.social_media a:hover{
+    color: grey;
+}
+
+#footer img{
+    width: 200px;
+}
+
+.carousel-inner img{
+    width: 150 vw;
+}
+
+.box {
+    position: relative;
+    max-width: 800px; /* Maximum width */
+    margin: 0 auto; /* Center it */
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .box img{
+      height: 380px;
+  }
+  
+  .box .content {
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 100%; /* Full width */
+    padding: 20px; /* Some padding */
+  }
+
+.box h1{
+    font-size: 1.2rem;
+}
+
+.box p{
+    font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    .box img{
+        height: 500px;
+    }
+  }
+
