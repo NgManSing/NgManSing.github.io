@@ -187,6 +187,11 @@ nav .navbar ul li.active a {
     text-align: center;
     font-family: Verdana;
     animation: fadein 2s;
+    background-color: white;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px;
 }
 
 i{
@@ -216,20 +221,27 @@ i{
     margin: 0 auto; /* Center it */
     margin-top: 20px;
     margin-bottom: 20px;
+    width: fit-content;
   }
 
   .box img{
-      height: 380px;
+      width: 30vw;
+      min-height: 50vh;
   }
   
   .box .content {
-    position: absolute; /* Position the background text */
-    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
-    background: rgb(0, 0, 0); /* Fallback color */
-    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-    color: #f1f1f1; /* Grey text */
-    width: 100%; /* Full width */
-    padding: 20px; /* Some padding */
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    transition: .5s ease;
+    opacity: 0;
+  }
+
+  .box:hover .content{
+    opacity: 1;
   }
 
 .box h1{
@@ -242,7 +254,8 @@ i{
 
 @media only screen and (max-width: 1200px) {
     .box img{
-        height: 500px;
+        width: 100%;
+        min-height: 500px;
     }
   }
 
